@@ -25,8 +25,8 @@
             bindings = <
 &kp Q  &kp W  &kp F  &kp P             &kp B        &kp J      &kp L  &kp U      &kp Y    &kp BSPC
 &kp A  &kp R  &kp S  &kp T             &kp G        &kp M      &kp N  &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D             &kp V        &kp K      &kp H  &kp ENTER  &kp TAB  &sl 3
-                     &kp LEFT_CONTROL  &kp LSHFT    &kp SPACE  &sl 1
+&kp Z  &kp X  &kp C  &kp D             &kp V        &kp K      &kp H  &kp ENTER  &kp TAB  &to 3
+                     &kp LEFT_CONTROL  &kp LSHFT    &kp SPACE  &to 1
             >;
         };
 
@@ -35,7 +35,7 @@
 &kp N1            &kp N2       &kp N3                 &kp N4           &kp N5      &kp N6       &kp N7           &kp N8             &kp N9     &kp N0
 &kp LESS_THAN     &kp PERCENT  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT    &kp EQUAL    &kp QUESTION     &kp SQT            &kp PLUS   &kp ASTERISK
 &kp GREATER_THAN  &kp DOLLAR   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT    &kp AT_SIGN  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp MINUS  &kp FSLH
-                                                      &trans           &sl 2       &sl 0        &trans
+                                                      &trans           &to 2       &to 0        &trans
             >;
         };
 
@@ -44,16 +44,16 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &sl 0     &sl 0   &trans
+                        &trans  &to 0     &to 0   &trans
             >;
         };
 
         nav {
             bindings = <
-&sl 4   &trans    &kp UP    &trans     &trans          &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp DEL
+&to 4   &trans    &kp UP    &trans     &trans          &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp DEL
 &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans          &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &trans  &trans    &trans    &trans     &trans          &trans     &trans    &trans    &trans     &trans
-                            &trans     &kp LEFT_ALT    &sl 0      &trans
+                            &trans     &kp LEFT_ALT    &to 0      &trans
             >;
         };
 
@@ -62,7 +62,7 @@
 &bt BT_CLR_ALL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &bootloader
 &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                &trans  &sl 0     &sl 0   &trans
+                                &trans  &to 0     &sl 0   &trans
             >;
         };
     };
